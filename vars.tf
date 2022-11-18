@@ -39,3 +39,10 @@ variable "lambda_concurrent_executions" {
   type        = number
   default     = -1
 }
+
+# Lambda function source template 
+variable "lambda_source_template" {
+  description = "Lambda function running source template"
+  type        = string
+  default     = "lambda_template.py"
+}

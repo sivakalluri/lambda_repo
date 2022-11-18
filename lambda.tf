@@ -1,6 +1,6 @@
 data "archive_file" "lambda_zip" {
     type        = "zip"
-    source_file = "lambda_template.py"
+    source_file = var.lambda_source_template
     output_path = "lambda_template.zip"
   }
 resource "aws_lambda_function" "lambda_fn" {
